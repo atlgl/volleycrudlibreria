@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.angelus.applibrovolleyv1.MainActivity">
+
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtnombre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txtnombre"
+        android:ems="10"
+        android:text="Id:"
+        android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Titulo:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtdescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtid"
+        android:ems="10"
+        android:hint="Descripcion:"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtdescripcion"
+        android:layout_toStartOf="@+id/btnno"
+        android:text="Si" />
+
+    <Button
+        android:id="@+id/btnno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtdescripcion"
+        android:layout_toEndOf="@+id/txtid"
+        android:text="No" />
+
+    <ListView
+        android:id="@+id/listLibros"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btnok"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
